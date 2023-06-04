@@ -1,6 +1,51 @@
 :root {
-
+    --font: Times New Roman,serif;
+    --background-color: #F9FAFB;
+    --sign-up-color: #FFFFFF;
+    --submit-color: #596D48;
 }
 body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+}
+#background {
+    height: 100%;
+    width: 40%;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+
+#content {
+    height: inherit;
+    width: 60%;
     background: red;
+    flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description {
+    width: 100%;
+    background: var(--background-color);
+    text-align: left;
+    font-size: 2rem;
+    flex: 1;
+}
+#singupform {
+    width: 100%;
+    background: var(--sign-up-color);
+    flex: 1;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.belowform {
+    width: 100%;
+    background: var(--background-color);
+    flex: 1;
 }
